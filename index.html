@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Камелия — салон красоты в Хомутово | Стрижки, маникюр, уход</title>
+    <meta name="description" content="Салон красоты „Камелия“ в с. Хомутово, ул. Колхозная, 204А. Парикмахерские услуги, маникюр, педикюр, оформление бровей, косметология и массаж. Онлайн-запись.">
+    <meta name="keywords" content="салон красоты Хомутово, Камелия Хомутово, маникюр Хомутово, парикмахерская Хомутово, стрижка Хомутово, педикюр Хомутово, косметология Хомутово">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Камелия — салон красоты в Хомутово">
+    <meta property="og:description" content="Место, где профессионализм встречается с заботой. Запишитесь на процедуру онлайн.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://camelia-salon.ru">
+    <meta property="og:image" content="hair.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BeautySalon",
+      "name": "Салон красоты Камелия",
+      "image": "hair.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. Колхозная, 204А",
+        "addressLocality": "с. Хомутово",
+        "addressRegion": "Иркутская область",
+        "addressCountry": "RU"
+      },
+      "telephone": "+73952607115",
+      "url": "https://n1131400.yclients.com/"
+    }
+    </script>
+
+    <style>
+        /* =========================================
+           CSS VARIABLES & RESET
+           ========================================= */
+        :root {
+            --color-pink: #E8C8C9;
+            --color-milky: #FFFDFB;
+            --color-beige: #F5EFE9;
+            --color-gold: #C5A46D;
+            --color-emerald: #24483E;
+            --color-text: #383331;
+            --color-text-light: #6B6360;
+            
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+            
+            --shadow-soft: 0 10px 40px rgba(36, 72, 62, 0.06);
+            --shadow-hover: 0 20px 50px rgba(36, 72, 62, 0.12);
+            --radius: 12px;
+            --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-text);
+            background-color: var(--color-milky);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img {
+            max-width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* =========================================
+           TYPOGRAPHY
+           ========================================= */
+        h1, h2, h3, h4 {
+            font-family: var(--font-heading);
+            font-weight: 500;
+            line-height: 1.2;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: var(--color-emerald);
+            text-align: center;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 2px;
+            background-color: var(--color-gold);
+            margin: 1rem auto 0;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--color-text-light);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            font-weight: 300;
+        }
+
+        /* =========================================
+           UTILITIES & ANIMATIONS
+           ========================================= */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 32px;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            text-transform: uppercase;
+        }
+
+        .btn-primary {
+            background-color: var(--color-emerald);
+            color: var(--color-milky);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-gold);
+            color: var(--color-emerald);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--color-emerald);
+            border: 1px solid var(--color-emerald);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--color-emerald);
+            color: var(--color-milky);
+        }
+
+        .btn-gold {
+            background-color: var(--color-gold);
+            color: var(--color-emerald);
+        }
+
+        .btn-gold:hover {
+            background-color: var(--color-emerald);
+            color: var(--color-gold);
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* =========================================
+           HEADER
+           ========================================= */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 20px 0;
+            transition: var(--transition);
+            background-color: transparent;
+        }
+
+        .header.scrolled {
+            background-color: rgba(255, 253, 251, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 12px 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .logo-name {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--color-emerald);
+            letter-spacing: 2px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo-name i {
+            color: var(--color-gold);
+            font-size: 1.4rem;
+        }
+
+        .logo-sub {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--color-text-light);
+            margin-top: -2px;
+        }
+
+        .nav-desktop {
+            display: none;
+        }
+
+        .nav-desktop ul {
+            display: flex;
+            gap: 32px;
+        }
+
+        .nav-desktop a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--color-text);
+            position: relative;
+        }
+
+        .nav-desktop a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: var(--color-gold);
+            transition: var(--transition);
+        }
+
+        .nav-desktop a:hover::after {
+            width: 100%;
+        }
+
+        .header-actions {
+            display: none;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .header-phone {
+            font-weight: 600;
+            color: var(--color-emerald);
+            font-size: 0.95rem;
+        }
+
+        .burger {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .burger span {
+            display: block;
+            width: 28px;
+            height: 2px;
+            background-color: var(--color-emerald);
+            transition: var(--transition);
+        }
+
+        .burger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .burger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .burger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            height: 100vh;
+            background-color: var(--color-milky);
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 32px;
+            transition: var(--transition);
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu a {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            color: var(--color-emerald);
+        }
+
+        .mobile-menu .btn {
+            margin-top: 20px;
+        }
+
+        @media (min-width: 992px) {
+            .nav-desktop, .header-actions {
+                display: flex;
+            }
+            .burger {
+                display: none;
+            }
+        }
+
+        /* =========================================
+           HERO
+           ========================================= */
+        .hero {
+            padding: 140px 0 80px;
+            background: linear-gradient(135deg, var(--color-milky) 0%, var(--color-beige) 100%);
+            overflow: hidden;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-inner {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .hero-content {
+            text-align: center;
+        }
+
+        .hero-overline {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: var(--color-gold);
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            color: var(--color-emerald);
+            margin-bottom: 24px;
+            line-height: 1.1;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: var(--color-text-light);
+            margin-bottom: 32px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 300;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            align-items: center;
+            margin-bottom: 32px;
+        }
+
+        .hero-decor {
+            font-family: var(--font-heading);
+            font-style: italic;
+            color: var(--color-gold);
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+        }
+
+                .hero-image-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 380px;
+            aspect-ratio: 3 / 4;
+            margin: 0 auto;
+            border-radius: var(--radius);
+            overflow: hidden;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-soft);
+        }
+
+        @media (min-width: 992px) {
+            .hero-inner {
+                grid-template-columns: 1fr 1fr;
+            }
+            .hero-content {
+                text-align: left;
+            }
+            .hero-subtitle {
+                margin-left: 0;
+            }
+            .hero-buttons {
+                flex-direction: row;
+                justify-content: flex-start;
+            }
+            .hero-image-wrapper {
+                margin: 0 0 0 auto;
+            }
+        }
+
+        /* =========================================
+           SERVICES
+           ========================================= */
+        .services {
+            padding: 100px 0;
+            background-color: var(--color-milky);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: #fff;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition);
+            border: 1px solid rgba(197, 164, 109, 0.15);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .service-image {
+            height: 240px;
+            overflow: hidden;
+        }
+
+        .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .service-card:hover .service-image img {
+            transform: scale(1.05);
+        }
+
+        .service-content {
+            padding: 28px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-title {
+            font-size: 1.4rem;
+            color: var(--color-emerald);
+            margin-bottom: 12px;
+        }
+
+        .service-desc {
+            font-size: 0.95rem;
+            color: var(--color-text-light);
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .service-list {
+            margin-bottom: 24px;
+        }
+
+        .service-list li {
+            font-size: 0.9rem;
+            padding: 6px 0;
+            border-bottom: 1px dashed rgba(197, 164, 109, 0.3);
+            display: flex;
+            justify-content: space-between;
+            color: var(--color-text);
+        }
+
+        .service-list li span.price {
+            font-weight: 600;
+            color: var(--color-emerald);
+            white-space: nowrap;
+            margin-left: 10px;
+        }
+
+        .service-list li span.note {
+            font-size: 0.8rem;
+            color: var(--color-text-light);
+            font-style: italic;
+        }
+
+        @media (min-width: 640px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .services-grid {
+                grid-template-columns: repeat(3, 1fr);
+                justify-items: center;
+            }
+            .service-card {
+                width: 100%;
+                max-width: 380px;
+            }
+        }
+
+        /* =========================================
+           WHY US
+           ========================================= */
+        .why-us {
+            padding: 100px 0;
+            background-color: var(--color-beige);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        .why-card {
+            text-align: center;
+            padding: 40px 24px;
+            background-color: var(--color-milky);
+            border-radius: var(--radius);
+            border: 1px solid rgba(197, 164, 109, 0.2);
+            transition: var(--transition);
+        }
+
+        .why-card:hover {
+            border-color: var(--color-gold);
+            transform: translateY(-5px);
+        }
+
+        .why-icon {
+            font-size: 2.5rem;
+            color: var(--color-gold);
+            margin-bottom: 20px;
+        }
+
+        .why-title {
+            font-size: 1.2rem;
+            color: var(--color-emerald);
+            margin-bottom: 12px;
+        }
+
+        .why-text {
+            font-size: 0.95rem;
+            color: var(--color-text-light);
+            line-height: 1.6;
+        }
+
+        @media (min-width: 768px) {
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .why-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        /* =========================================
+           MASTERS (TEXT ONLY)
+           ========================================= */
+        .masters {
+            padding: 100px 0;
+            background-color: var(--color-milky);
+        }
+
+        .masters-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        .master-card {
+            text-align: center;
+            background-color: #fff;
+            border-radius: var(--radius);
+            padding: 40px 24px;
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition);
+            border: 1px solid rgba(197, 164, 109, 0.15);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .master-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--color-gold);
+        }
+
+        .master-icon {
+            width: 64px;
+            height: 64px;
+            background-color: var(--color-beige);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            color: var(--color-gold);
+            font-size: 1.5rem;
+        }
+
+        .master-name {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--color-emerald);
+            margin-bottom: 8px;
+        }
+
+        .master-desc {
+            font-size: 0.95rem;
+            color: var(--color-text-light);
+            margin-bottom: 24px;
+            font-style: italic;
+        }
+
+        @media (min-width: 640px) {
+            .masters-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .masters-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        /* =========================================
+           GALLERY (OUR WORKS)
+           ========================================= */
+        .gallery {
+            padding: 100px 0;
+            background-color: var(--color-beige);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius);
+            overflow: hidden;
+            cursor: pointer;
+            aspect-ratio: 4/3;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+
+        .gallery-item::after {
+            content: '\f00e';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            color: white;
+            font-size: 2rem;
+            opacity: 0;
+            transition: var(--transition);
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .gallery-item:hover::after {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        @media (min-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 280px);
+            }
+            .gallery-item:nth-child(1) {
+                grid-column: span 2;
+                grid-row: span 2;
+                aspect-ratio: auto;
+            }
+            .gallery-item:nth-child(2),
+            .gallery-item:nth-child(3),
+            .gallery-item:nth-child(4),
+            .gallery-item:nth-child(5) {
+                grid-column: span 1;
+                grid-row: span 1;
+                aspect-ratio: auto;
+            }
+        }
+
+        /* Lightbox */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(36, 72, 62, 0.95);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .lightbox.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .lightbox-img {
+            max-width: 90%;
+            max-height: 90vh;
+            border-radius: 8px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+            object-fit: contain;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            color: white;
+            font-size: 2.5rem;
+            cursor: pointer;
+            transition: var(--transition);
+            background: none;
+            border: none;
+        }
+
+        .lightbox-close:hover {
+            color: var(--color-gold);
+            transform: rotate(90deg);
+        }
+
+        /* =========================================
+           CTA
+           ========================================= */
+        .cta {
+            padding: 100px 0;
+            background-color: var(--color-emerald);
+            text-align: center;
+            color: var(--color-milky);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(197, 164, 109, 0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .cta-title {
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: var(--color-milky);
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .cta-text {
+            font-size: 1.1rem;
+            color: rgba(255, 253, 251, 0.8);
+            max-width: 600px;
+            margin: 0 auto 32px;
+            position: relative;
+        }
+
+        .cta-note {
+            margin-top: 24px;
+            font-family: var(--font-heading);
+            font-style: italic;
+            color: var(--color-gold);
+            font-size: 1.1rem;
+            position: relative;
+        }
+
+        /* =========================================
+           CONTACTS
+           ========================================= */
+        .contacts {
+            padding: 100px 0;
+            background-color: var(--color-milky);
+        }
+
+        .contacts-inner {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .contacts-info {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .contact-icon {
+            width: 48px;
+            height: 48px;
+            background-color: var(--color-beige);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-emerald);
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .contact-details h4 {
+            font-size: 1.1rem;
+            color: var(--color-emerald);
+            margin-bottom: 4px;
+        }
+
+        .contact-details p, .contact-details a {
+            color: var(--color-text-light);
+            font-size: 1rem;
+        }
+
+        .contact-details a:hover {
+            color: var(--color-gold);
+        }
+
+        .contact-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .map-container {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            height: 400px;
+            background-color: var(--color-beige);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        @media (min-width: 992px) {
+            .contacts-inner {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        /* =========================================
+           FOOTER
+           ========================================= */
+        .footer {
+            background-color: var(--color-emerald);
+            color: var(--color-milky);
+            padding: 60px 0 30px;
+        }
+
+        .footer-inner {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--color-milky);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-logo i {
+            color: var(--color-gold);
+        }
+
+        .footer-sub {
+            font-size: 0.85rem;
+            color: rgba(255, 253, 251, 0.6);
+            margin-bottom: 20px;
+        }
+
+        .footer-nav ul {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-nav a {
+            color: rgba(255, 253, 251, 0.8);
+            font-size: 0.95rem;
+        }
+
+        .footer-nav a:hover {
+            color: var(--color-gold);
+        }
+
+        .footer-contacts p {
+            color: rgba(255, 253, 251, 0.8);
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+
+        .footer-contacts a {
+            color: var(--color-gold);
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .footer-socials a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 253, 251, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-milky);
+            transition: var(--transition);
+        }
+
+        .footer-socials a:hover {
+            background-color: var(--color-gold);
+            border-color: var(--color-gold);
+            color: var(--color-emerald);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 253, 251, 0.1);
+            padding-top: 24px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: rgba(255, 253, 251, 0.5);
+        }
+
+        .footer-love {
+            font-family: var(--font-heading);
+            font-style: italic;
+            color: var(--color-gold);
+            margin-top: 8px;
+            font-size: 0.9rem;
+        }
+
+        @media (min-width: 768px) {
+            .footer-inner {
+                grid-template-columns: 2fr 1fr 1fr;
+            }
+        }
+
+        /* =========================================
+           FLOATING ELEMENTS
+           ========================================= */
+        .mobile-fixed-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 998;
+            width: calc(100% - 40px);
+            max-width: 400px;
+            box-shadow: 0 10px 30px rgba(36, 72, 62, 0.3);
+            display: flex;
+        }
+
+        @media (min-width: 992px) {
+            .mobile-fixed-btn {
+                display: none;
+            }
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--color-emerald);
+            color: var(--color-milky);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 997;
+            border: none;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--color-gold);
+            color: var(--color-emerald);
+            transform: translateY(-5px);
+        }
+
+        @media (max-width: 991px) {
+            .back-to-top {
+                bottom: 90px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <span class="logo-name"><i class="fa-solid fa-spa"></i> КАМЕЛИЯ</span>
+                <span class="logo-sub">Салон красоты</span>
+            </a>
+
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="#hero">Главная</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#why-us">О нас</a></li>
+                    <li><a href="#masters">Мастера</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tel:+73952607115" class="header-phone">+7 (3952) 60-71-15</a>
+                <a href="https://n1131400.yclients.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Записаться</a>
+            </div>
+
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#hero" class="mobile-link">Главная</a>
+        <a href="#services" class="mobile-link">Услуги</a>
+        <a href="#why-us" class="mobile-link">О нас</a>
+        <a href="#masters" class="mobile-link">Мастера</a>
+        <a href="#contacts" class="mobile-link">Контакты</a>
+        <a href="https://n1131400.yclients.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Записаться онлайн</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="container hero-inner">
+            <div class="hero-content animate-on-scroll">
+                <p class="hero-overline">Ваша красота — наша забота</p>
+                <h1 class="hero-title">Красота в каждой детали</h1>
+                <p class="hero-subtitle">Место, где профессионализм встречается с заботой. Доверьте свою красоту опытным мастерам салона «Камелия» и наслаждайтесь результатом в уютной атмосфере.</p>
+                <div class="hero-buttons">
+                    <a href="https://n1131400.yclients.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Записаться онлайн</a>
+                    <a href="#services" class="btn btn-outline">Наши услуги</a>
+                </div>
+                <p class="hero-decor">Beauty • Care • Harmony</p>
+            </div>
+            
+            <!-- ИСПРАВЛЕННЫЙ HTML-БЛОК -->
+                        <div class="hero-image-wrapper animate-on-scroll">
+                <img src="hair.jpg" alt="Парикмахерские услуги в салоне Камелия" class="hero-image" loading="eager">
+            </div>
+            <!-- КОНЕЦ ИСПРАВЛЕННОГО БЛОКА -->
+            
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Наши услуги</h2>
+            <p class="section-subtitle animate-on-scroll">Всё для вашей красоты и уверенности в себе — в одном месте.</p>
+            
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-image">
+                        <img src="hair.jpg" alt="Парикмахерские услуги" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Парикмахерские услуги</h3>
+                        <p class="service-desc">Ухоженные волосы, стильные образы и профессиональный подход к каждой детали.</p>
+                        <ul class="service-list">
+                            <li>Женская стрижка <span class="price">400 ₽</span></li>
+                            <li>Укладки <span class="note">Стоимость уточняйте у администратора</span></li>
+                            <li>Уход за волосами <span class="note">Стоимость уточняйте у администратора</span></li>
+                        </ul>
+                        <a href="https://n1131400.yclients.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%;">Записаться</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-image">
+                        <img src="manicure.jpg" alt="Ногтевой сервис" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Ногтевой сервис</h3>
+                        <p class="service-desc">Безупречный маникюр, который подчёркивает вашу индивидуальность.</p>
+                        <ul class="service-list">
+                            <li>Классический маникюр <span class="price">350 ₽</span></li>
+                            <li>Наращивание ногтей <span class="note">Стоимость уточняйте у администратора</span></li>
+                            <li>Уход за ногтями <span class="note">Стоимость уточняйте у администратора</span></li>
+                        </ul>
+                        <a href="https://n1131400.yclients.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%;">Записаться</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-image">
+                        <img src="lashes.jpg" alt="Ресницы и брови" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Ресницы и брови</h3>
+                        <p class="service-desc">Выразительный взгляд и естественная красота с профессиональным оформлением.</p>
+                        <ul class="service-list">
+                            <li>Ламинирование ресниц <span class="note">Стоимость уточняйте у администратора</span></li>
+                            <li>Коррекция бровей <span class="note">Стоимость уточняйте у администратора</span></li>
+                            <li>Окрашивание бровей <span class="note">Стоимость уточняйте у администратора</span></li>
+                        </ul>
+                        <a href="https://n1131400.yclients.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%;">Записаться</a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-image">
+                        <img src="pedicure.jpg" alt="Педикюр" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Педикюр</h3>
+                        <p class="service-desc">Бережный уход за стопами, эстетичное покрытие и SPA-процедуры для вашей легкости.</p>
+                        <ul class="service-list">
+                            <li>Классический педикюр <span class="note">Стоимость уточняйте у администратора</span></li>
+                            <li>Аппаратный педикюр <span class="note">Стоимость уточняйте у администратора</span></li>
+                            <li>SPA-уход для ног <span class="note">Стоимость уточняйте у администратора</span></li>
+                        </ul>
+                        <a href="https://n1131400.yclients.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%;">Записаться</a>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-image">
+                        <img src="mens_cut.jpg" alt="Мужские стрижки" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Мужские стрижки</h3>
+                        <p class="service-desc">Стильные мужские образы, стрижки и уход с вниманием к деталям и комфорту.</p>
+                        <ul class="service-list">
+                            <li>Мужская стрижка <span class="price">150 ₽</span></li>
+                            <li>Стрижка машинкой <span class="note">Стоимость уточняйте у администратора</span></li>
+                            <li>Уход за бородой <span class="note">Стоимость уточняйте у администратора</span></li>
+                        </ul>
+                        <a href="https://n1131400.yclients.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%;">Записаться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Почему выбирают «Камелию»</h2>
+            <p class="section-subtitle animate-on-scroll">Мы создаём не просто красоту, а атмосферу, в которую хочется возвращаться.</p>
+            
+            <div class="why-grid">
+                <div class="why-card animate-on-scroll">
+                    <div class="why-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3 class="why-title">Опытные мастера</h3>
+                    <p class="why-text">Наши специалисты знают, как подчеркнуть вашу индивидуальность и подобрать подходящий уход.</p>
+                </div>
+                <div class="why-card animate-on-scroll">
+                    <div class="why-icon"><i class="fa-solid fa-gem"></i></div>
+                    <h3 class="why-title">Качественные материалы</h3>
+                    <p class="why-text">Мы уделяем внимание качеству используемых материалов и комфорту каждой процедуры.</p>
+                </div>
+                <div class="why-card animate-on-scroll">
+                    <div class="why-icon"><i class="fa-solid fa-couch"></i></div>
+                    <h3 class="why-title">Уютная атмосфера</h3>
+                    <p class="why-text">Приятная обстановка, внимание к деталям и забота о каждом госте.</p>
+                </div>
+                <div class="why-card animate-on-scroll">
+                    <div class="why-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                    <h3 class="why-title">Удобная онлайн-запись</h3>
+                    <p class="why-text">Выбирайте подходящую услугу и записывайтесь онлайн в удобное время.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MASTERS -->
+    <section class="masters" id="masters">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Мастера, которым можно доверять</h2>
+            <p class="section-subtitle animate-on-scroll">За каждой красивой работой стоит профессионал, который любит своё дело.</p>
+            
+            <div class="masters-grid">
+                <div class="master-card animate-on-scroll">
+                    <div class="master-icon">
+                        <i class="fa-solid fa-spa"></i>
+                    </div>
+                    <h3 class="master-name">Надежда</h3>
+                    <p class="master-desc">Профессиональный мастер</p>
+                    <a href="https://n1131400.yclients.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Записаться</a>
+                </div>
+                <div class="master-card animate-on-scroll">
+                    <div class="master-icon">
+                        <i class="fa-solid fa-spa"></i>
+                    </div>
+                    <h3 class="master-name">Анна</h3>
+                    <p class="master-desc">Профессиональный мастер</p>
+                    <a href="https://n1131400.yclients.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Записаться</a>
+                </div>
+                <div class="master-card animate-on-scroll">
+                    <div class="master-icon">
+                        <i class="fa-solid fa-spa"></i>
+                    </div>
+                    <h3 class="master-name">Татьяна</h3>
+                    <p class="master-desc">Профессиональный мастер</p>
+                    <a href="https://n1131400.yclients.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Записаться</a>
+                </div>
+                <div class="master-card animate-on-scroll">
+                    <div class="master-icon">
+                        <i class="fa-solid fa-spa"></i>
+                    </div>
+                    <h3 class="master-name">Юлия</h3>
+                    <p class="master-desc">Профессиональный мастер</p>
+                    <a href="https://n1131400.yclients.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Записаться</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY (OUR WORKS) -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Наши работы</h2>
+            <p class="section-subtitle animate-on-scroll">Результаты, которыми мы гордимся. Каждая деталь имеет значение.</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item animate-on-scroll" onclick="openLightbox('hair.jpg')">
+                    <img src="hair.jpg" alt="Наши работы: стрижка и укладка" loading="lazy">
+                </div>
+                <div class="gallery-item animate-on-scroll" onclick="openLightbox('lashes.jpg')">
+                    <img src="lashes.jpg" alt="Наши работы: оформление ресниц и бровей" loading="lazy">
+                </div>
+                <div class="gallery-item animate-on-scroll" onclick="openLightbox('mens_cut.jpg')">
+                    <img src="mens_cut.jpg" alt="Наши работы: мужская стрижка" loading="lazy">
+                </div>
+                <div class="gallery-item animate-on-scroll" onclick="openLightbox('manicure.jpg')">
+                    <img src="manicure.jpg" alt="Наши работы: маникюр" loading="lazy">
+                </div>
+                <div class="gallery-item animate-on-scroll" onclick="openLightbox('pedicure.jpg')">
+                    <img src="pedicure.jpg" alt="Наши работы: педикюр" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+        <button class="lightbox-close" onclick="closeLightbox(event)">&times;</button>
+        <img src="" alt="Просмотр изображения" class="lightbox-img" id="lightboxImg">
+    </div>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container animate-on-scroll">
+            <h2 class="cta-title">Время уделить внимание себе</h2>
+            <p class="cta-text">Подарите себе немного заботы и профессионального ухода. Мы будем рады видеть вас в салоне «Камелия».</p>
+            <a href="https://n1131400.yclients.com/" target="_blank" rel="noopener noreferrer" class="btn btn-gold">Записаться онлайн</a>
+            <p class="cta-note">Ваша красота начинается с одного шага.</p>
+        </div>
+    </section>
+
+    <!-- CONTACTS -->
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Будем рады видеть вас</h2>
+            <p class="section-subtitle animate-on-scroll">Запишитесь на процедуру или свяжитесь с нами удобным способом.</p>
+            
+            <div class="contacts-inner">
+                <div class="contacts-info animate-on-scroll">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="contact-details">
+                            <h4>Адрес</h4>
+                            <p>Иркутская область, с. Хомутово, ул. Колхозная, 204А</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="contact-details">
+                            <h4>Телефон</h4>
+                            <a href="tel:+73952607115">+7 (3952) 60-71-15</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                        <div class="contact-details">
+                            <h4>Онлайн-запись</h4>
+                            <a href="https://n1131400.yclients.com/" target="_blank" rel="noopener noreferrer">Записаться через Yclients</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-buttons">
+                        <a href="https://wa.me/73952607115" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="background-color: #25D366; color: white;">
+                            <i class="fa-brands fa-whatsapp" style="margin-right: 8px;"></i> Написать в WhatsApp
+                        </a>
+                        <a href="#" id="vkLink" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="background-color: #0077FF; color: white; border-color: #0077FF;">
+                            <i class="fa-brands fa-vk" style="margin-right: 8px;"></i> Мы ВКонтакте
+                        </a>
+                    </div>
+                </div>
+
+                <div class="map-container animate-on-scroll">
+                    <iframe src="https://yandex.ru/map-widget/v1/?text=Иркутская+область,+с.+Хомутово,+ул.+Колхозная,+204А" allowfullscreen="true"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div>
+                    <div class="footer-logo"><i class="fa-solid fa-spa"></i> КАМЕЛИЯ</div>
+                    <p class="footer-sub">Салон красоты в Хомутово</p>
+                    <p style="color: rgba(255,253,251,0.7); font-size: 0.9rem; max-width: 300px;">
+                        Профессиональный уход, индивидуальный подход и красота, созданная с любовью.
+                    </p>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4 style="color: var(--color-gold); margin-bottom: 16px; font-family: var(--font-heading);">Навигация</h4>
+                    <ul>
+                        <li><a href="#hero">Главная</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#masters">Мастера</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contacts">
+                    <h4 style="color: var(--color-gold); margin-bottom: 16px; font-family: var(--font-heading);">Контакты</h4>
+                    <p>с. Хомутово, ул. Колхозная, 204А</p>
+                    <p><a href="tel:+73952607115">+7 (3952) 60-71-15</a></p>
+                    <div class="footer-socials">
+                        <a href="https://wa.me/73952607115" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" id="vkLinkFooter" target="_blank" rel="noopener noreferrer" aria-label="ВКонтакте"><i class="fa-brands fa-vk"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Салон красоты «Камелия». Все права защищены.</p>
+                <p class="footer-love">Создано с любовью к красоте.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MOBILE FIXED BUTTON -->
+    <a href="https://n1131400.yclients.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary mobile-fixed-btn">
+        Записаться онлайн
+    </a>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="backToTop" aria-label="Вернуться наверх">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // =========================================
+        // CONFIGURATION VARIABLES
+        // =========================================
+        const YCLIENTS_URL = "https://n1131400.yclients.com/";
+        const PHONE_NUMBER = "+73952607115";
+        const WHATSAPP_URL = "https://wa.me/73952607115";
+        const VK_URL = ""; // Добавить официальную ссылку VK
+
+        // Apply VK URL safely
+        document.addEventListener('DOMContentLoaded', () => {
+            const vkLinks = document.querySelectorAll('#vkLink, #vkLinkFooter');
+            vkLinks.forEach(link => {
+                if (VK_URL && VK_URL.trim() !== "") {
+                    link.href = VK_URL;
+                } else {
+                    link.href = "#";
+                    link.onclick = (e) => {
+                        e.preventDefault();
+                        alert("Ссылка на группу ВКонтакте будет добавлена позже.");
+                    };
+                }
+            });
+        });
+
+        // =========================================
+        // HEADER SCROLL EFFECT
+        // =========================================
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // =========================================
+        // MOBILE MENU
+        // =========================================
+        const burger = document.getElementById('burger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                burger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // =========================================
+        // SCROLL ANIMATIONS (Intersection Observer)
+        // =========================================
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // =========================================
+        // LIGHTBOX GALLERY
+        // =========================================
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+
+        function openLightbox(src) {
+            lightboxImg.src = src;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox(event) {
+            if (event.target === lightbox || event.target.classList.contains('lightbox-close')) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+                setTimeout(() => { lightboxImg.src = ''; }, 300);
+            }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+                setTimeout(() => { lightboxImg.src = ''; }, 300);
+            }
+        });
+
+        // =========================================
+        // BACK TO TOP BUTTON
+        // =========================================
+        const backToTopBtn = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
